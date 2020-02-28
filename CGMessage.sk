@@ -1,2 +1,2 @@
 on join:
-	broadcast "§6&lTower§b&lParty &f⇾ &e%player% &7Подключился к игре (&e%number of all players%&7/&e%max player count%&7)"
+	broadcast "§6&lCookieGames &f⇾ &e%player% &7Подключился к игре (&e%number of all players%&7/&e%max player count%&7)"
