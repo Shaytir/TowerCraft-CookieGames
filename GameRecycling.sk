@@ -1,5 +1,4 @@
-#Ивенты игры==============================================
-on join:
-	player is in "world" #Определённое время дропает печеньки каждому игроку
-	give 25 cookie named "&6Печенька" to the players
-	send "&6CookieGames &f⇾ &7Бонусные печеньки" to the players
+every 10 second in "world":
+	set {Players} to number of all players	
+	if {Players} is max player count: #Если игроков равно "Макс", выводится титулка о начале игры
+		send subtitle "&cИгра начнётся через &e30 &cсекунд" to players

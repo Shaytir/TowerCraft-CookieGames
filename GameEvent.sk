@@ -12,8 +12,8 @@ on hunger meter change: #Отменяет ивент на голод во все
     cancel event
 #Игровые ивенты===============================================================================
 on join:
-	wait 20 second
 	player is in "world" #При входе в игру выдаётся стартовая печенька
+	wait 20 second
 	give 25 cookie named "&6Печенька" to the players
 	send "&6CookieGames &f⇾ &7Бонусные печеньки" to the players
 on break of gold block:	#Дропает печеньку из золотого блока
