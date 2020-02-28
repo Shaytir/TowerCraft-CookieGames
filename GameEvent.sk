@@ -16,6 +16,14 @@ on break of gold block:	#Дропает печеньку из золотого �
 on break of gold block: #Дропает семена печенья с шансом 10%
 	chance of 10%:
 		drop brick block named "&6Печеньковые семена" at location of event-block
-on break of brick block: #Дропает печеньки из блоков семян с шансом 35%
-	chance of 35%:
+on break of brick block: #Дропает печеньки из блоков семян с шансом 10%
+	chance of 10%:
 		drop cookie named "&6Печенька" at location of event-block
+on place of a brick block:
+	play sound "block.anvil.use" with volume 1.0 at player
+	play smoke at the targeted block to the player
+	show smoke at the targeted block to the player
+on drop of cookie: #Отменяет ивент на дроп печенек во всех мирах.
+	player is in "world"
+	cancel event
+	message "&6CookieGames &f⇾ &7Печеньки выбрасывать нельзя!"
