@@ -26,4 +26,4 @@ on place of a brick block:
 on drop of cookie: #Отменяет ивент на дроп печенек во всех мирах.
 	player is in "world"
 	cancel event
-	message "&6CookieGames &f⇾ &7Печеньки выбрасывать нельзя!"
+	message "&6CookieGames &f⇾ &7Печеньки выбрасывать нельзя!" to the player
