@@ -11,6 +11,11 @@ on break:
 on hunger meter change: #Отменяет ивент на голод во всех мирах.
     cancel event
 #Игровые ивенты===============================================================================
+on join:
+	wait 20 second
+	player is in "world" #При входе в игру выдаётся стартовая печенька
+	give 25 cookie named "&6Печенька" to the players
+	send "&6CookieGames &f⇾ &7Бонусные печеньки" to the players
 on break of gold block:	#Дропает печеньку из золотого блока
 	drop cookie named "&6Печенька" at location of event-block
 on break of gold block: #Дропает семена печенья с шансом 10%

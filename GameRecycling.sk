@@ -1,4 +1,5 @@
 #Ивенты игры==============================================
-every 60 second in "world": #Определённое время дропает печеньки каждому игроку
+on join:
+	player is in "world" #Определённое время дропает печеньки каждому игроку
 	give 25 cookie named "&6Печенька" to the players
 	send "&6CookieGames &f⇾ &7Бонусные печеньки" to the players
