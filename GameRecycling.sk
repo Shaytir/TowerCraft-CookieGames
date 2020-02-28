@@ -1,4 +1,30 @@
-every 10 second in "world":
+on join:
+	wait 3 tick
 	set {Players} to number of all players	
 	if {Players} is max player count: #Если игроков равно "Макс", выводится титулка о начале игры
-		send subtitle "&cИгра начнётся через &e30 &cсекунд" to players
+		play sound "block.note.pling" with volume 1.0 at player
+		send subtitle "&cИгра начнётся через &e30 &cсекунд" to players	
+		wait 15 second
+		play sound "block.note.pling" with volume 1.0 at player
+		send subtitle "&cИгра начнётся через &e15 &cсекунд" to players
+		wait 5 second
+		play sound "block.note.pling" with volume 1.0 at player
+		send subtitle "&cИгра начнётся через &e10 &cсекунд" to players
+		wait 5 second
+		play sound "block.note.pling" with volume 1.0 at player
+		send subtitle "&cИгра начнётся через &e5 &cсекунд" to players
+		wait 1 second
+		play sound "block.note.pling" with volume 1.0 at players
+		send subtitle "&cИгра начнётся через &e4 &cсекунды" to players
+		wait 1 second
+		play sound "block.note.pling" with volume 1.0 at players		
+		send subtitle "&cИгра начнётся через &e3 &cсекунды" to players
+		wait 1 second
+		play sound "block.note.pling" with volume 1.0 at players
+		send subtitle "&cИгра начнётся через &e2 &cсекунды" to players
+		wait 1 second		
+		play sound "block.note.pling" with volume 1.0 at player
+		send subtitle "&cИгра начнётся через &e1 &cсекуну" to players
+		wait 1 second
+		send title "&cИгра началась!" to players
+		play sound "entity.experience_orb.pickup" with volume 1.0 to the player
