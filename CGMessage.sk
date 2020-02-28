@@ -1,2 +1,2 @@
-on join:
+on join: # При подключении игрока выводит сообщение о подключении и нужному онлайну для начала игры
 	broadcast "§6&lCookieGames &f⇾ &e%player% &7Подключился к игре (&e%number of all players%&7/&e%max player count%&7)"
