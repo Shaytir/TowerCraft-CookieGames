@@ -6,7 +6,7 @@ on damage:
 	players is in "world" #Отменяет ивент на дамаг в определённом мире.
 	cancel event
 on break:
-	player is in "world_nether" #Отменяет ивент на разрушение в определённом мире.
+	player is in "world" #Отменяет ивент на разрушение в определённом мире.
 	cancel event
 on hunger meter change: #Отменяет ивент на голод во всех мирах.
     cancel event

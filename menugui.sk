@@ -1,0 +1,14 @@
+command /menu:
+	trigger:
+		set {_1} to player's health
+		set {_2} to player's max health
+		open chest with 1 row named "&8         HelathBar Config" to player
+		format slot 0 of player with gray stained glass pane named "&7" to be unstealable
+		format slot 1 of player with redstone named "&7Reload script" to close then run [make player execute command "/healthbar reload"]
+		format slot 2 of player with gray stained glass pane named "&7" to be unstealable
+		format slot 3 of player with compass named "&7Style 1" with lore "&7Style: " to close then run [make player execute command "/healthbar style1"]
+		format slot 4 of player with compass named "&7Style 2" with lore "&7Style: " to close then run [make player execute command "/healthbar style2"]
+		format slot 5 of player with compass named "&7Style 3" with lore "&7Style: " to close then run [make player execute command "/healthbar style3"]
+		format slot 6 of player with gray stained glass pane named "&7" to be unstealable
+		format slot 7 of player with lever named "&aOn&7/&cOff" with lore "&7Disable/Enable the global visibility of the health bar" to close then run [make player execute command "/healthbar toggle"]
+		format slot 8 of player with gray stained glass pane named "&7" to be unstealable

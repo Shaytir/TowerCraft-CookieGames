@@ -1,3 +1,16 @@
+#Переменные:
+#{Players} - Общий онлайн сервера.
+
+
+#Циклические ивенты====================================================
+#every 30 second in "name_arena":
+#		set time to 12:00
+#		set weather to clear
+#		set the difficulty of "world" to peaceful
+every 30 second in "world": #Держит постоянный день, чистит погоду и режим сложности
+		set time to 12:00
+		set weather to clear
+		set the difficulty of "world" to peaceful
 on join:
 	wait 3 tick
 	set {Players} to number of all players	
